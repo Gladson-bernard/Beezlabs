@@ -1,0 +1,15 @@
+
+public class MyClass {
+    public static void main(String args[]) {
+    int x , y ;
+    System.out.println("Enter x and y");
+    x=45;
+    y=98;
+    System.out.println(x+"\n"+y);
+    System.out.println("Before Swapping"+"\n x = "+x+"\n y = "+y);
+    x=x^y;
+    y=x^y;
+    x=x^y;
+    System.out.println("After Swapping without a third variable "+"\n x = "+x+"\n y = "+y);
+    }
+}

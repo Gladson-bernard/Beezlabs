@@ -6,13 +6,20 @@ class Student
     float mathQuat, mathHalf;
     float scienceQuat, scienceHalf;
     float socialQuat, socialHalf;
+    String avg(float a,float b)
+    {
+        float average = (a+b)/2;
+        if(average%1!=0)
+        return Float.toString(average);
+        return Integer.toString((int)(average));
+    }
     void average()
     {
-        System.out.println("English - "+((englishQuat+englishHalf)/2));
-        System.out.println("Tamil - "+((tamilQuat+tamilHalf)/2));
-        System.out.println("Math - "+((mathQuat+mathHalf)/2));
-        System.out.println("Science - "+((scienceQuat+scienceHalf)/2));
-        System.out.println("Social - "+((socialQuat+socialHalf)/2));
+        System.out.println("English - "+avg(englishQuat ,englishHalf));
+        System.out.println("Tamil - "+avg(tamilQuat,tamilHalf));
+        System.out.println("Math - "+avg(mathQuat,mathHalf));
+        System.out.println("Science - "+avg(scienceQuat,scienceHalf));
+        System.out.println("Social - "+avg(socialQuat,socialHalf));
     }
 }
 public class MyClass {
